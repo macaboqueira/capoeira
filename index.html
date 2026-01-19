@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capoeira Cadência - Ponto de Cultura</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+        
+        :root {
+            --capoeira-orange: #f39c12;
+            --capoeira-green: #27ae60;
+            --capoeira-dark: #2c3e50;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://raw.githubusercontent.com/macaboqueira/capoeira/refs/heads/main/capoeirailustracao.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .ods-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+
+        .project-card {
+            border-left: 4px solid var(--capoeira-orange);
+        }
+
+        .counter-box {
+            background: linear-gradient(135deg, #f39c12 0%, #d35400 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold text-orange-600 tracking-tighter">CADÊNCIA</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#inicio" class="hover:text-orange-600 px-3 py-2 font-medium">Início</a>
+                        <a href="#sobre" class="hover:text-orange-600 px-3 py-2 font-medium">Sobre</a>
+                        <a href="#projetos" class="hover:text-orange-600 px-3 py-2 font-medium">Projetos</a>
+                        <a href="#ebooks" class="hover:text-orange-600 px-3 py-2 font-medium">E-books</a>
+                        <a href="#ods" class="hover:text-orange-600 px-3 py-2 font-medium">Impacto</a>
+                        <a href="#contato" class="bg-orange-600 text-white px-4 py-2 rounded-full hover:bg-orange-700 transition">Participe</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-orange-600">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-gradient h-screen flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Ponto de Cultura Capoeira Cadência</h1>
+            <p class="text-xl md:text-2xl mb-8 font-light">Transformando vidas através da arte, educação e cidadania ativa em Granja.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#sobre" class="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-full font-bold text-lg transition">Nossa História</a>
+                <a href="#projetos" class="bg-white hover:bg-gray-100 text-orange-600 px-8 py-3 rounded-full font-bold text-lg transition">Ver Projetos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard de Impacto -->
+    <section class="relative -mt-16 z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="counter-box p-6 rounded-2xl shadow-xl text-white text-center">
+                <div class="text-3xl md:text-4xl font-bold mb-1">+ 150</div>
+                <div class="text-xs md:text-sm uppercase opacity-90">Alunos</div>
+            </div>
+            <div class="counter-box p-6 rounded-2xl shadow-xl text-white text-center">
+                <div class="text-3xl md:text-4xl font-bold mb-1">+ 10</div>
+                <div class="text-xs md:text-sm uppercase opacity-90">Anos de Atuação</div>
+            </div>
+            <div class="counter-box p-6 rounded-2xl shadow-xl text-white text-center">
+                <div class="text-3xl md:text-4xl font-bold mb-1">+ 6</div>
+                <div class="text-xs md:text-sm uppercase opacity-90">Projetos</div>
+            </div>
+            <div class="counter-box p-6 rounded-2xl shadow-xl text-white text-center">
+                <div class="text-3xl md:text-4xl font-bold mb-1">+ 20</div>
+                <div class="text-xs md:text-sm uppercase opacity-90">Eventos</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900">Nossa Filosofia</h2>
+                    <p class="text-lg leading-relaxed mb-6">
+                        Desde 2017, buscamos superar as dificuldades de manter viva a valorização da capoeira na sociedade atual através de uma gestão administrativa eficiente e uma equipe multidisciplinar ativa.
+                    </p>
+                    <div class="bg-orange-50 p-6 rounded-xl border-l-4 border-orange-500 italic mb-6">
+                        "Capoeira não é só 'levantar' perna dentro da academia. Alunos participam de rodas de conversas, campanhas sociais e eventos para estímulo da cidadania ativa."
+                    </div>
+                </div>
+                <div class="aspect-video rounded-2xl overflow-hidden shadow-2xl bg-black">
+                    <!-- Updated YouTube Video Embed -->
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/M0Tw2FG91xc?si=7Ih38meTxXB5d4D-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos Section -->
+    <section id="projetos" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Principais Projetos</h2>
+            <p class="text-gray-600">Nossa atuação transformadora em diversas frentes culturais</p>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="project-card bg-white p-6 rounded-lg shadow-md">
+                <span class="text-orange-600 font-bold text-sm">2020 - 2025</span>
+                <h3 class="text-xl font-bold mt-2 mb-3">Capoeira e Letramento Racial</h3>
+                <p class="text-gray-600">Ações diretas nas escolas para promover a igualdade e o reconhecimento da cultura afro-brasileira.</p>
+            </div>
+            <div class="project-card bg-white p-6 rounded-lg shadow-md">
+                <span class="text-orange-600 font-bold text-sm">2017 - 2026</span>
+                <h3 class="text-xl font-bold mt-2 mb-3">Aulas e Rodas de Vivência</h3>
+                <p class="text-gray-600">Atividades contínuas de treino e diálogos formativos para todos os níveis.</p>
+            </div>
+            <div class="project-card bg-white p-6 rounded-lg shadow-md border-t-4 border-orange-500">
+                <span class="text-orange-600 font-bold text-sm">2021</span>
+                <h3 class="text-xl font-bold mt-2 mb-3">Capoeira Nosso Patrimônio</h3>
+                <a href="https://sites.google.com/view/capoeiranossopatrimonio" target="_blank" class="text-orange-600 hover:underline text-sm font-bold flex items-center">
+                    Acessar site <i class="fas fa-external-link-alt ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- E-books Section -->
+    <section id="ebooks" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Biblioteca Digital (E-books)</h2>
+            <p class="text-gray-600">Material de estudo e pesquisa sobre a capoeira e educação</p>
+        </div>
+        <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6 px-4">
+            <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 flex flex-col items-center text-center">
+                <i class="fas fa-book-open text-3xl text-orange-500 mb-4"></i>
+                <h4 class="font-bold mb-2">O corpo e a linguagem da capoeira</h4>
+                <a href="https://www.pimentacultural.com/wp-content/uploads/2025/08/eBook_corpo-linguagem-capoeira.pdf" target="_blank" class="mt-auto bg-gray-900 text-white px-4 py-2 rounded-lg text-sm hover:bg-orange-600 transition">Ler E-book</a>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 flex flex-col items-center text-center">
+                <i class="fas fa-book-open text-3xl text-orange-500 mb-4"></i>
+                <h4 class="font-bold mb-2">Capoeira Regional: Mestre Bimba</h4>
+                <a href="https://repositorio.ufba.br/bitstream/ri/4986/1/capoeira%20regional%20-%20a%20escola%20de%20Mestre%20Bimba.pdf" target="_blank" class="mt-auto bg-gray-900 text-white px-4 py-2 rounded-lg text-sm hover:bg-orange-600 transition">Ler E-book</a>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 flex flex-col items-center text-center">
+                <i class="fas fa-book-open text-3xl text-orange-500 mb-4"></i>
+                <h4 class="font-bold mb-2">Capoeira, Identidade e Gênero</h4>
+                <a href="https://unigra.com.br/ler/436_CAPOEIRA,-IDENTIDADE-E-GENERO:-ENSAIOS-SOBRE-A-HISTORIA-SOCIAL-DA-CAPOEIRA-NO-BRASIL" target="_blank" class="mt-auto bg-gray-900 text-white px-4 py-2 rounded-lg text-sm hover:bg-orange-600 transition">Ler E-book</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parceiros Section -->
+    <section id="parceiros" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4">Nossos Amigos e Parceiros</h2>
+            <div class="flex flex-wrap justify-center gap-12 mt-12">
+                <div class="flex flex-col items-center group">
+                    <div class="w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center mb-4 group-hover:bg-orange-600 transition">
+                        <i class="fas fa-school text-3xl"></i>
+                    </div>
+                    <span class="max-w-[150px] text-sm">Escola de Cultura Padre Osvaldo Chaves</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <div class="w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center mb-4 group-hover:bg-orange-600 transition">
+                        <i class="fas fa-graduation-cap text-3xl"></i>
+                    </div>
+                    <span class="max-w-[150px] text-sm">Escola Dr. José Glauberton Alves Sá</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <div class="w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center mb-4 group-hover:bg-orange-600 transition">
+                        <i class="fas fa-university text-3xl"></i>
+                    </div>
+                    <span class="max-w-[150px] text-sm">Biblioteca comunitária do Barrocão</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ODS Section -->
+    <section id="ods" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Integrando os ODS</h2>
+                <p class="text-gray-600">Nossas atividades estão alinhadas aos Objetivos de Desenvolvimento Sustentável da ONU.</p>
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-5 gap-4">
+                <div class="ods-card bg-red-600 text-white p-6 rounded-lg text-center shadow-lg">
+                    <span class="block text-4xl font-bold mb-2">3</span>
+                    <p class="text-[10px] font-semibold uppercase leading-tight">Saúde e Bem-Estar</p>
+                </div>
+                <div class="ods-card bg-red-700 text-white p-6 rounded-lg text-center shadow-lg">
+                    <span class="block text-4xl font-bold mb-2">4</span>
+                    <p class="text-[10px] font-semibold uppercase leading-tight">Educação de Qualidade</p>
+                </div>
+                <div class="ods-card bg-orange-600 text-white p-6 rounded-lg text-center shadow-lg">
+                    <span class="block text-4xl font-bold mb-2">5</span>
+                    <p class="text-[10px] font-semibold uppercase leading-tight">Igualdade de Gênero</p>
+                </div>
+                <div class="ods-card bg-pink-600 text-white p-6 rounded-lg text-center shadow-lg">
+                    <span class="block text-4xl font-bold mb-2">10</span>
+                    <p class="text-[10px] font-semibold uppercase leading-tight">Redução das Desigualdades</p>
+                </div>
+                <div class="ods-card bg-blue-800 text-white p-6 rounded-lg text-center shadow-lg">
+                    <span class="block text-4xl font-bold mb-2">16</span>
+                    <p class="text-[10px] font-semibold uppercase leading-tight">Paz e Justiça</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-gray-800 pb-8 mb-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-orange-500 mb-4">CADÊNCIA</h3>
+                    <p class="text-gray-400 text-sm">Ponto de Cultura em Granja/CE. Capoeira como ferramenta de cidadania ativa e transformação social.</p>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h4 class="font-bold mb-2">Links</h4>
+                    <a href="https://culturaviva.cultura.gov.br/agente/17449818" class="text-gray-400 hover:text-white transition" target="_blank">Perfil Cultura Viva</a>
+                    <a href="#sobre" class="text-gray-400 hover:text-white transition">História</a>
+                    <a href="#projetos" class="text-gray-400 hover:text-white transition">Projetos</a>
+                </div>
+                <div class="flex space-x-4 items-start">
+                    <a href="#" class="w-10 h-10 bg-gray-800 flex items-center justify-center rounded-full hover:bg-orange-600 transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 flex items-center justify-center rounded-full hover:bg-orange-600 transition"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 text-xs">
+            <p>&copy; 2024 Ponto de Cultura Capoeira Cadência. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll adjustment
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 64,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
